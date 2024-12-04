@@ -1,0 +1,24 @@
+.btn-success {
+  background-color: #66bb6a;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #ef5350;
+  color: white;
+}
+
+.btn-warning {
+  background-color: #ffca28;
+  color: black;
+}
+
+.btn-primary {
+  background-color: #42a5f5;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #b0bec5;
+  color: white;
+}
