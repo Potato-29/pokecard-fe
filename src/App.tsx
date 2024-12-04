@@ -26,6 +26,13 @@ function App() {
         >
           Register
         </Button>
+        <Button
+          className="py-2 px-3 mx-2"
+          onClick={() => navigate("/game")}
+          variant="primary"
+        >
+          Game
+        </Button>
       </div>
     </div>
   );
