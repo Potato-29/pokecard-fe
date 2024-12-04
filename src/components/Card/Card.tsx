@@ -1,5 +1,5 @@
 import { useDrag } from "react-dnd";
-import { Card as CardType } from "../types/game";
+import { Card as CardType } from "../../types/game";
 
 interface CardProps {
   card: CardType;
@@ -10,7 +10,7 @@ interface CardProps {
 export function Card({ card, isPlayed = false, canDrag = true }: CardProps) {
   const [{ isDragging }, drag] = useDrag(() => ({
     type: "card",
-    item: { id: card.id, ...card },
+    item: { ...card, id: card.id },
     collect: (monitor) => ({
       isDragging: !!monitor.isDragging(),
     }),
